@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Academic/Github/VHDL_tutorial_problems_LFT/Problem_1/pulse_gen/sim
+T_opt
+!s110 1641292142
+V>Hd_GjRMhFI149=aJ:XCS0
+04 18 6 work pulse_generator_tb behave 1
+=1-f43909c93476-61d4216e-1c8-4940
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+Epulse_generator
+Z1 w1641310718
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8../RTL/VHDL/pulse_generator.vhd
+Z6 F../RTL/VHDL/pulse_generator.vhd
+l0
+L5
+VSX^jLfa=:6J<[BV]CJ^k70
+!s100 2albZmoLhczkBA]j=JQkC1
+Z7 OL;C;10.5;63
+32
+Z8 !s110 1641292135
+!i10b 1
+Z9 !s108 1641292135.000000
+Z10 !s90 -work|work|-f|../sim/bin/programmable_pulse_generator.f|
+Z11 !s107 ../sim/VHDL_tb/pulse_generator_tb.vhd|../RTL/VHDL/pulse_generator.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 15 pulse_generator 0 22 SX^jLfa=:6J<[BV]CJ^k70
+l23
+L13
+VlN]Id4?UcZKHSFBEL6gTV0
+!s100 X^B1i0i1Pj13VJGkgWmN21
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Epulse_generator_tb
+Z14 w1641310776
+R2
+R3
+R4
+R0
+Z15 8../sim/VHDL_tb/pulse_generator_tb.vhd
+Z16 F../sim/VHDL_tb/pulse_generator_tb.vhd
+l0
+L5
+Vgf5i_h@B;]hP`8zN?fmf:1
+!s100 9n24AcNnmDQkjm^N68;G[1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 18 pulse_generator_tb 0 22 gf5i_h@B;]hP`8zN?fmf:1
+l27
+L8
+VH8oleBA[XVN3kadD<d5jK1
+!s100 4]iX9z?M_ZEN:5U];P7SW2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
