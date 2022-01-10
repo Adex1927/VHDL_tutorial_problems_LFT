@@ -12,20 +12,23 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim work.pulse_generator_tb -gui -do "add log -r sim:/pulse_generator_tb/*;" 
-# Start time: 13:01:19 on Jan 04,2022
+# vsim work.serial_pattern_search_tb -gui -do "add log -r sim:/serial_pattern_search_tb/*;" 
+# Start time: 07:12:21 on Jan 05,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.pulse_generator_tb(behave)#1
-# add log -r sim:/pulse_generator_tb/*
+# Loading work.serial_pattern_search_tb(behave)#1
+# add log -r sim:/serial_pattern_search_tb/*
 # 
 add wave -position insertpoint  \
-sim:/pulse_generator_tb/i_clk \
-sim:/pulse_generator_tb/reset_n \
-sim:/pulse_generator_tb/o_pulse
-run 15000
-# End time: 13:02:33 on Jan 04,2022, Elapsed time: 0:01:14
+sim:/serial_pattern_search_tb/i_clk \
+sim:/serial_pattern_search_tb/o_pulse
+run 20000
+run 20000
+run 20000
+run 144800
+run 10000
+# End time: 07:21:49 on Jan 05,2022, Elapsed time: 0:09:28
 # Errors: 0, Warnings: 0

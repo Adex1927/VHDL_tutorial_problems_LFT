@@ -3,6 +3,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity pulse_generator is
+   generic(
+          pulse_width   : integer := 5;   ----- Generic value to define pulse width
+          pulse_period  : integer := 12   ----- Generic value to define pulse period
+   );
    port(
        clk            : in std_logic;   ----- Input clock
        RESET_n        : in std_logic;   ----- Synchronized active low reset
@@ -11,10 +15,6 @@ entity pulse_generator is
 end pulse_generator;
 
 architecture rtl of pulse_generator is
-
-   -- Constants to program the pulse width and pulse period
-   constant pulse_width   : integer := 7;
-   constant pulse_period  : integer := 13;
    
    -- Signals used to count pulse width and pulse period
    signal counter_width   : integer range 0 to pulse_width;

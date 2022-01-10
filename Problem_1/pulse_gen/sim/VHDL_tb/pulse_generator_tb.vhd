@@ -7,8 +7,10 @@ end pulse_generator_tb;
 
 architecture behave of pulse_generator_tb is
 
-   -- Clock frequency = 10 MHz
-   constant clock_period : time := 100 ns;
+   -- Constants to run simulation
+   constant clock_period      : time    := 100 ns;   -- Clock frequency = 10 MHz
+   constant sim_pulse_width   : integer := 7;
+   constant sim_pulse_period  : integer := 13;
    
    -- Signal to stimulate clock and reset
    signal i_clk   : std_logic := '1';
@@ -17,6 +19,10 @@ architecture behave of pulse_generator_tb is
    
    -- Component declaration
    component pulse_generator is
+      generic(
+             pulse_width   : integer := 5;
+             pulse_period  : integer := 12
+      );
       port(
           clk            : in std_logic;
           RESET_n        : in std_logic;
@@ -28,6 +34,10 @@ begin
 
    -- Instantiate the unit under test
    UUT : pulse_generator
+         generic map(
+                    pulse_width  => sim_pulse_width,
+                    pulse_period => sim_pulse_period
+         )
          port map(
                  clk          => i_clk,
                  RESET_n      => reset_n,
