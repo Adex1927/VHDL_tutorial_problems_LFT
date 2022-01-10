@@ -1,0 +1,7 @@
+  vhdl work ../../RTL/VHDL/incremental_data_generate.vhd
+  vhdl work ../../RTL/VHDL/incremental_data_checker.vhd
+  vhdl work ../../RTL/VHDL/dual_port_ram.vhd
+  vhdl work ../VHDL_tb/dual_port_ram_tb.vhd
+  
+
+  

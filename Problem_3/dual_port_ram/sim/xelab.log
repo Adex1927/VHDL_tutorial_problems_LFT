@@ -1,0 +1,35 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -timescale 1ns/1ps -prj bin/dual_port_ram_vivado.prj -L XPM -L building_blocks -debug all -s test work.dual_port_ram_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/RTL/VHDL/incremental_data_generate.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'incremental_data_generate'
+WARNING: [VRFC 10-3711] signal 'counter_size' is used in subtype-indication/type-definition [bin/../../RTL/VHDL/incremental_data_generate.vhd:18]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/RTL/VHDL/incremental_data_checker.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'incremental_data_checker'
+WARNING: [VRFC 10-3711] signal 'counter_size' is used in subtype-indication/type-definition [D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/RTL/VHDL/incremental_data_checker.vhd:23]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/RTL/VHDL/dual_port_ram.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'dual_port_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/sim/VHDL_tb/dual_port_ram_tb.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'dual_port_ram_tb'
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'counter_size' [bin/../../RTL/VHDL/incremental_data_generate.vhd:18]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'counter_size' [D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/RTL/VHDL/incremental_data_checker.vhd:23]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xpm.vcomponents
+Compiling package vl.vl_types
+Compiling architecture rtl of entity work.incremental_data_generate [incremental_data_generate_defaul...]
+Compiling architecture rtl of entity work.incremental_data_checker [incremental_data_checker_default]
+Compiling module xpm.xpm_memory_base(MEMORY_SIZE=256,...
+Compiling module xpm.xpm_memory_tdpram(MEMORY_SIZE=25...
+Compiling architecture rtl of entity work.dual_port_ram [dual_port_ram_default]
+Compiling architecture behave of entity work.dual_port_ram_tb
+Built simulation snapshot test

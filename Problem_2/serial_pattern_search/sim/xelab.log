@@ -1,0 +1,30 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -timescale 1ns/1ps -prj bin/serial_pattern_search_vivado.prj -L XPM -debug all -s test work.serial_pattern_search_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_2/serial_pattern_search/RTL/VHDL/serial_pattern_generate.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'serial_pattern_generate'
+WARNING: [VRFC 10-3711] signal 'counter_size' is used in subtype-indication/type-definition [bin/../../RTL/VHDL/serial_pattern_generate.vhd:18]
+WARNING: [VRFC 10-3711] signal 'counter_bitsize' is used in subtype-indication/type-definition [bin/../../RTL/VHDL/serial_pattern_generate.vhd:19]
+WARNING: [VRFC 10-3711] signal 'counter_bitsize' is used in subtype-indication/type-definition [bin/../../RTL/VHDL/serial_pattern_generate.vhd:20]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_2/serial_pattern_search/RTL/VHDL/serial_pattern_search.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'serial_pattern_search'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VHDL_tutorial_problems_LFT/Problem_2/serial_pattern_search/sim/VHDL_tb/serial_pattern_search_tb.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'serial_pattern_search_tb'
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'counter_size' [bin/../../RTL/VHDL/serial_pattern_generate.vhd:18]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'counter_bitsize' [bin/../../RTL/VHDL/serial_pattern_generate.vhd:19]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'counter_bitsize' [bin/../../RTL/VHDL/serial_pattern_generate.vhd:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity work.serial_pattern_generate [serial_pattern_generate_default]
+Compiling architecture rtl of entity work.serial_pattern_search [serial_pattern_search_default]
+Compiling architecture behave of entity work.serial_pattern_search_tb
+Built simulation snapshot test

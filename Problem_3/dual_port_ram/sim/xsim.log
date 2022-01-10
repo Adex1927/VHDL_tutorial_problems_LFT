@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# xsim v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan 10 10:44:14 2022
+# Process ID: 968
+# Current directory: D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/sim
+# Command line: xsim.exe -source {xsim.dir/test/xsim_script.tcl}
+# Log file: D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/sim/xsim.log
+# Journal file: D:/VHDL_tutorial_problems_LFT/Problem_3/dual_port_ram/sim\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/test/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+current_fileset: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1199.754 ; gain = 0.000
+# xsim {test} -autoloadwcfg
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+add_wave {{/dual_port_ram_tb/i_clk}} {{/dual_port_ram_tb/reset}} {{/dual_port_ram_tb/o_pulse}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/dual_port_ram_tb/UUT/incremental_data_checker_1/input_data}} {{/dual_port_ram_tb/UUT/incremental_data_checker_1/read_address}} {{/dual_port_ram_tb/UUT/incremental_data_checker_1/compare_binary}} 
+run 250 us
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 488
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc 48
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 490
+Warning: [XPM_MEMORY 30-16] MEMORY_SIZE (256), WRITE_DATA_WIDTH_A (8), and ADDR_WIDTH_A (8) together imply that the addressable range exceeds the memory size for this configuration which uses port A write operations. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 529
+Warning: [XPM_MEMORY 30-17] MEMORY_SIZE (256), READ_DATA_WIDTH_A (8), and ADDR_WIDTH_A (8) together imply that the addressable range exceeds the memory size for this configuration which uses port A read operations. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 531
+Warning: [XPM_MEMORY 30-18] MEMORY_SIZE (256), WRITE_DATA_WIDTH_B (8), and ADDR_WIDTH_B (8) together imply that the addressable range exceeds the memory size for this configuration which uses port B write operations. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 533
+Warning: [XPM_MEMORY 30-19] MEMORY_SIZE (256), READ_DATA_WIDTH_B (8), and ADDR_WIDTH_B (8) together imply that the addressable range exceeds the memory size for this configuration which uses port B read operations. dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /dual_port_ram_tb/UUT/xpm_memory_tdpram_inst/xpm_memory_base_inst/Initial294_0  Scope: dual_port_ram_tb.UUT.xpm_memory_tdpram_inst.xpm_memory_base_inst.config_drc  File: /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 535
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1199.754 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Jan 10 10:45:59 2022...

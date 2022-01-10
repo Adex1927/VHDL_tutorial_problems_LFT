@@ -12,12 +12,14 @@ architecture behave of serial_pattern_search_tb is
    
    -- Signal to stimulate clock and get output pulse
    signal i_clk   : std_logic := '1';
+   signal reset_n : std_logic := '0';
    signal o_pulse : std_logic := '0';
    
    -- Component declaration
    component serial_pattern_search is
       port(
           clk                    : in std_logic;
+          RESET_n                : in std_logic;
           OUTPUT_PATTERN_FOUND   : out std_logic
       );
    end component serial_pattern_search;
@@ -28,6 +30,7 @@ begin
    UUT : serial_pattern_search
          port map(
                  clk                  => i_clk,
+                 RESET_n              => reset_n,
                  OUTPUT_PATTERN_FOUND => o_pulse
          );
          
@@ -41,6 +44,10 @@ begin
    process
    -- This process performs the testing of the component pulse_generator
    begin
-      wait for 10000 ns;
+      reset_n <= '0';
+      wait for 1 us;
+      
+      reset_n <= '1';
+      wait;
    end process;
 end behave;

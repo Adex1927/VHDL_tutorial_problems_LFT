@@ -1,0 +1,1 @@
+-timescale "1ns/1ps" -prj "bin/dual_port_ram_vivado.prj" -L "XPM" -L "building_blocks" -debug "all" -s "test" "work.dual_port_ram_tb" 

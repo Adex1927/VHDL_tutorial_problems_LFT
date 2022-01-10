@@ -1,0 +1,6 @@
+  vhdl work ../../RTL/VHDL/serial_pattern_generate.vhd
+  vhdl work ../../RTL/VHDL/serial_pattern_search.vhd
+  vhdl work ../VHDL_tb/serial_pattern_search_tb.vhd
+  
+
+  

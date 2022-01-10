@@ -1,0 +1,1 @@
+-timescale "1ns/1ps" -prj "bin/serial_pattern_search_vivado.prj" -L "XPM" -debug "all" -s "test" "work.serial_pattern_search_tb" 
